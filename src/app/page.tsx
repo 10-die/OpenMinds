@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             alt="image1"
             width={400}
             height={400}
-            defaultValue="Open Minds envisions a future where every child in South Africa has access to a transformative, personalized education that fosters creativity, critical thinking, and a love for learning. By embracing the unique potential of each learner, we empower students to excel academically while nurturing their individuality and passions. Our goal is to break down traditional barriers to education, offering flexible, inclusive, and innovative homeschooling solutions that respect cultural diversity and adapt to the evolving needs of families. At Open Minds, we believe in cultivating a generation of lifelong learners who are equipped to thrive in an ever-changing world."
+            text="Open Minds envisions a future where every child in South Africa has access to a transformative, personalized education that fosters creativity, critical thinking, and a love for learning. By embracing the unique potential of each learner, we empower students to excel academically while nurturing their individuality and passions. Our goal is to break down traditional barriers to education, offering flexible, inclusive, and innovative homeschooling solutions that respect cultural diversity and adapt to the evolving needs of families. At Open Minds, we believe in cultivating a generation of lifelong learners who are equipped to thrive in an ever-changing world."
                 />
         
           <ImageText
@@ -49,12 +49,7 @@ const Home: React.FC = () => {
             alt="Image 2"
             width={400}
             height={400}
-            defaultValue="Personalized Learning: Tailored education plans that cater to each child’s unique needs and strengths.
-                          Critical Thinking: Encouraging analytical skills and independent thought in every subject.
-                          Creativity: Fostering innovation and imagination in a dynamic learning environment.
-                          Inclusivity: Embracing cultural diversity and ensuring accessibility for all learners.
-                          Flexibility: Offering adaptable learning schedules that fit the rhythms of family life.
-                          Holistic Development: Nurturing emotional, social, and intellectual growth to create well-rounded individuals."
+            text={"Our goals"}
             />
         </div>
 

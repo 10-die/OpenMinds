@@ -8,10 +8,10 @@ interface ImageTextHandler
     alt: string;
     width: number;
     height: number;
-    defaultValue: string;
+    text: string;
 }
 
-const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, defaultValue}) =>
+const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, text }) =>
 {
     const [showTextArea, setShowTextArea] = useState<boolean>(false);
 
@@ -24,27 +24,31 @@ const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, de
 return(
     <div className={styles.textContainer} style={{ position: 'relative', display: 'inline-block' }}>
         <Image
-        alt={alt}
-        src={src}
-        width={width}
-        height={height}
-        defaultValue={defaultValue}
-        onClick={handleImageClick}
-        style={{ cursor: 'pointer'}}
+            alt={alt}
+            src={src}
+            width={width}
+            height={height}
+            onClick={handleImageClick}
+            style={{ cursor: 'pointer'}}
         />
 
         {showTextArea && (
             <textarea
                 className={styles.textArea}
+                value={text}
+                readOnly
                 style={{
                     position: 'absolute',
                             top: 0,
                             left: 0,
                             width: '100%',
                             height: '100%',
-                            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                            color: 'rgb(255, 255, 255)',
+                            backgroundColor: 'rgb(13, 44, 44)',
                             border: 'none',
                             resize: 'none',
+                            margin: '1rem',
+                            padding: '1rem',
                             pointerEvents: 'none' // Allows clicks to pass through the text area
                 }}
             />

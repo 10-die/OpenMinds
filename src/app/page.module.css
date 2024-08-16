@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
-    background-color: black;
+    background-color: rgb(0, 30, 37);
 }
 
 .topContainer
@@ -39,6 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .midContainer Image
