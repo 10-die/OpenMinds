@@ -9,52 +9,51 @@ interface ImageTextHandler
     width: number;
     height: number;
     text: string;
+    pre_text: string;
 }
 
-const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, text }) =>
+const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, pre_text, text }) =>
 {
     const [showTextArea, setShowTextArea] = useState<boolean>(false);
+    const [showOverlayText, setShowOverlayText] = useState<boolean>(true); 
+
 
     const handleImageClick = () =>
     {
         setShowTextArea(prevState => !prevState); // toggle visibility
+        setShowOverlayText(prevState => !prevState);
     };
 
 
-return(
-    <div className={styles.textContainer} style={{ position: 'relative', display: 'inline-block' }}>
-        <Image
+return (
+        <div className={styles.textContainer}>
+          <Image
             alt={alt}
             src={src}
             width={width}
             height={height}
             onClick={handleImageClick}
-            style={{ cursor: 'pointer'}}
-        />
+            className={styles.Image}
+          />
+      
+            {showOverlayText &&
+                (
+                    <div className={styles.overlayText} onClick={handleImageClick}>
+                        {pre_text}
+                        
+                    </div>
+                )}
 
-        {showTextArea && (
-            <textarea
-                className={styles.textArea}
-                value={text}
-                readOnly
-                style={{
-                    position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            width: '100%',
-                            height: '100%',
-                            color: 'rgb(255, 255, 255)',
-                            backgroundColor: 'rgb(13, 44, 44)',
-                            border: 'none',
-                            resize: 'none',
-                            margin: '1rem',
-                            padding: '1rem',
-                            pointerEvents: 'none' // Allows clicks to pass through the text area
-                }}
-            />
-        )}
-    </div>
-    );
+            {showTextArea && 
+                (
+                    <textarea
+                        className={styles.textArea}
+                        value={text}
+                        readOnly
+                    />
+          )}
+        </div>
+      );
 };
 
 export default ImageTextArea;
