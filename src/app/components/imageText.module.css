@@ -1,13 +1,21 @@
 .textContainer 
     {
     position: relative;
-    display: inline-block;
+    display: flex;
+    overflow: hidden;
   }
   
   .Image 
   {
     /*if, cursor hovers, turn to pointer*/
     cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .Image:hover
+  {
+    /*if, cursor hovers, turn to pointer*/
+    transform: scale(1.1);
   }
   
   .textArea 
@@ -75,6 +83,9 @@
 
     /*rule, text cannot be highlighted*/
     user-select: none;
+
+    /*rule, can be clicked infinitley*/
+    pointer-events: none; 
 
     /*parameters, text, how it looks*/
     font-size: 4rem;
