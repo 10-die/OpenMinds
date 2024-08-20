@@ -5,20 +5,28 @@ import Loading from "./components/loading";
 import React, { useState, useEffect } from 'react';
 import ImageText from "./components/imageText";
 
-const Home: React.FC = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2200); // 3 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loading />;
-  }
+const Home: React.FC = () => 
+  {
+  
+      const [OpenMindsText, setText] = useState('');
+      const phrase = 'Oppen Minds';
+    
+      useEffect(() => {
+        let index = 0;
+    
+        const interval = setInterval(() => {
+          setText((prev) => prev + phrase.charAt(index));
+          index += 1;
+    
+          if (index === phrase.length) {
+            clearInterval(interval);
+          }
+        }, 200); // Adjust the speed here (200ms per letter)
+    
+        return () => clearInterval(interval); // Clean up the interval
+      }, [phrase]);
+    
+  
 
   return (
     <main className={styles.mainContainer}>
@@ -41,7 +49,7 @@ const Home: React.FC = () => {
                 Crafting the keys that...
             </h2>
             <h3>
-                Open Minds
+                {OpenMindsText}
             </h3>
         </div>
 
