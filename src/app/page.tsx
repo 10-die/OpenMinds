@@ -22,7 +22,7 @@ const Home: React.FC = () => {
 
   return (
     <main className={styles.mainContainer}>
-
+      
         <div className={styles.topContainer}>
 
           <div className={styles.logoContainer}>

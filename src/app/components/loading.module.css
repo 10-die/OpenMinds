@@ -21,7 +21,7 @@
     transform: translateX(-1rem);
 
     /*animation*/
-    animation: zoomIn 2.4s cubic-bezier(0.42, 0, 0.58, 3) forwards;
+    animation: zoomIn 2.4s cubic-bezier(0.1, 0.2, 0.5, 1.55) forwards;
     }
 
     @keyframes zoomIn
