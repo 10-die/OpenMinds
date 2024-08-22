@@ -9,7 +9,7 @@ import Link from "next/link";
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
-  const loadDuration = 2400; // duration of loading screen (in ms)
+  const loadDuration = 6000; // duration of loading screen (in ms)
 
   // default loading screen when site is accessed
   useEffect(() => {
@@ -45,27 +45,35 @@ const Home: React.FC = () => {
           <div className={styles.logoContainer}>
               <Image className={styles.logo}
                 alt="Open Minds Logo 1"
-                src="/OpenMindsLogoOne.png"
+                src="/OpenMindsLogoTwo.png"
                 width={60}
                 height={60}
                 onClick={handleLogoClick}
               />
             
             <h1>
-                Homeschooling Hub
+                Homeschooling
             </h1>
-          </div>
-            
             <h2>
-                Crafting the keys that...
+              hub
             </h2>
+          </div>
+
+          <div className={styles.slogan}>
             <h3>
-                Open Minds
+                Think
             </h3>
+            <h4>
+              Outside
+            </h4>
+          </div>
+
         </div>
 
         <div className={styles.midContainerOne}>
-
+        <h1>
+          The Box.
+        </h1>
           <div className={styles.imageContainer}>
 
             <div className={styles.imageOne}>
@@ -109,7 +117,7 @@ const Home: React.FC = () => {
 
         <div className={styles.slidingBannerContainer}>
           <div className={styles.slidingBanner}>
-          Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub 
+          Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub 
           </div>
         </div>
 
