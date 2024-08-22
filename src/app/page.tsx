@@ -4,17 +4,34 @@ import styles from "./page.module.css";
 import Loading from "./components/loading";
 import React, { useState, useEffect } from 'react';
 import ImageText from "./components/imageText";
+import Link from "next/link";
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
+  const loadDuration = 2400; // duration of loading screen (in ms)
+
+  // default loading screen when site is accessed
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2200); // 3 seconds
+    }, loadDuration);
+    
 
     return () => clearTimeout(timer);
   }, []);
+
+  // loading screen when logo is clicked
+  const handleLogoClick = () =>
+  {
+    setLoading(true);
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, loadDuration);
+
+    return () => clearTimeout(timer);
+  };
 
   if (loading) {
     return <Loading />;
@@ -26,12 +43,14 @@ const Home: React.FC = () => {
         <div className={styles.topContainer}>
 
           <div className={styles.logoContainer}>
-            <Image
-            alt="Open Minds Logo 1"
-            src="/OpenMindsLogoOne.jpg"
-            width={60}
-            height={60}
-            />
+              <Image className={styles.logo}
+                alt="Open Minds Logo 1"
+                src="/OpenMindsLogoOne.png"
+                width={60}
+                height={60}
+                onClick={handleLogoClick}
+              />
+            
             <h1>
                 Homeschooling Hub
             </h1>
@@ -78,11 +97,21 @@ const Home: React.FC = () => {
 
         <div className={styles.midContainerTwo}>
           <h1>
-            What we offer
+            This is a place where you can be you
           </h1>
         </div>
 
-        
+        <div className={styles.midContainerThree}>
+          <h1>
+            More than just Academia
+          </h1>
+        </div>
+
+        <div className={styles.slidingBannerContainer}>
+          <div className={styles.slidingBanner}>
+          Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub 
+          </div>
+        </div>
 
     </main>
   );
