@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from "./loading.module.css";
 
 const Loading = () => {
-  const [text, setText] = useState('           ');
-  const phrase = 'Oppen Minds';
+  const [text, setText] = useState('');
+  const phrase = 'OppenMinds';
 
   useEffect(() => {
     let index = 0;
@@ -25,10 +25,10 @@ const Loading = () => {
 
       <div className={styles.auxiliaryText}>
         <h2>
-          Crafting the keys that
+          Crafting the keys that...
         </h2>
         <h3>
-          Aspiring To
+          Aspiring To...
         </h3>
       </div>
 

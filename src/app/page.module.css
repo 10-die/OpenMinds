@@ -136,8 +136,10 @@
             color: rgb(54, 133, 126);
             font-family:monospace;
             /*border parameters*/
-            margin-top: 0.5rem;
             transform: translateX(-10%);
+            opacity: 100%;
+            animation: fadeIn 2s ease-out;
+            animation-delay: 1s;
         }
 
         .slogan h4
@@ -154,7 +156,27 @@
             margin-top: -4%;
             margin-bottom: -3%;
             transform: translateX(20%);
+            opacity: 100%;
+            animation: fadeIn 2s ease-out;
+            animation-delay: 3s;
+            width: 80%;
         }
+
+        @keyframes fadeIn
+            {
+                0%
+                {
+                    opacity: 100%;
+                }
+                50%
+                {
+                    opacity: 20%;
+                }
+                100%
+                {
+                opacity: 100%;
+                }
+            }
 
     .midContainerOne
     {
@@ -175,12 +197,15 @@
         .imageOne
         {
             display: flex;
+            justify-content: flex-start;
+            
             margin: 5rem;
-            transform: translate(-80%, 20%);
+            margin-top: 30%;
         }
 
         .imageTwo
         {
+            justify-content: center;
             display: flex;
             margin: 5rem;
         }
@@ -189,11 +214,12 @@
     {
         /*The Box*/
         display: flex;
-        position:absolute;
+        position: absolute;
         font-size: 5rem;
         letter-spacing: 0.2rem;
         color: rgb(136, 177, 196);
         font-family:Arial, Helvetica, sans-serif;
+        transform: translateY(3rem);
     }
     .midContainerOne Image
     {
@@ -213,8 +239,12 @@
         .midContainerTwo h1
         {
             display: flex;
+            justify-content: center;
             align-items: center;
             font-size: 5rem;
+            letter-spacing: 0.2rem;
+            color: rgb(54, 133, 126);
+            font-family:monospace;
         }
     
     .slidingBannerContainer

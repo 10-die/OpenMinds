@@ -8,11 +8,12 @@ interface ImageTextHandler
     alt: string;
     width: number;
     height: number;
-    text: string;
-    pre_text: string;
+    tOverlay: string;
+    tArea: string;
 }
 
-const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, pre_text, text }) =>
+
+const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, tOverlay, tArea }) =>
 {
     const [showTextArea, setShowTextArea] = useState<boolean>(false);
     const [showOverlayText, setShowOverlayText] = useState<boolean>(true); 
@@ -24,6 +25,8 @@ const ImageTextArea: React.FC<ImageTextHandler> = ({ src, alt, width, height, pr
         setShowOverlayText(prevState => !prevState);
     };
 
+    
+
 
 return (
         <div className={styles.textContainer}>
@@ -32,14 +35,14 @@ return (
             src={src}
             width={width}
             height={height}
-            onClick={handleImageClick}
             className={styles.Image}
+            onClick={handleImageClick}
           />
       
             {showOverlayText &&
                 (
-                    <div className={styles.overlayText} onClick={handleImageClick}>
-                        {pre_text}
+                    <div className={styles.textOverlay} onClick={handleImageClick}>
+                        {tOverlay}
                         
                     </div>
                 )}
@@ -47,8 +50,9 @@ return (
             {showTextArea && 
                 (
                     <textarea
-                        className={styles.textArea}
-                        value={text}
+                        className={styles.textArea} 
+                        onClick={handleImageClick}
+                        value={tArea}
                         readOnly
                     />
           )}

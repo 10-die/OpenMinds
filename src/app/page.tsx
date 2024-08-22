@@ -82,8 +82,8 @@ const Home: React.FC = () => {
                 src="/Homeschooling1.jpg"
                 width={500}
                 height={500}
-                pre_text="Our Vision"
-                text="Open Minds envisions a future where every child in South Africa has access to a transformative, personalized education that fosters creativity, critical thinking, and a love for learning. By embracing the unique potential of each learner, we empower students to excel academically while nurturing their individuality and passions. Our goal is to break down traditional barriers to education, offering flexible, inclusive, and innovative homeschooling solutions that respect cultural diversity and adapt to the evolving needs of families. At Open Minds, we believe in cultivating a generation of lifelong learners who are equipped to thrive in an ever-changing world."
+                tOverlay="Our Vision"
+                tArea="Open Minds envisions a future where every child in South Africa has access to a transformative, personalized education that fosters creativity, critical thinking, and a love for learning. By embracing the unique potential of each learner, we empower students to excel academically while nurturing their individuality and passions. Our goal is to break down traditional barriers to education, offering flexible, inclusive, and innovative homeschooling solutions that respect cultural diversity and adapt to the evolving needs of families. At Open Minds, we believe in cultivating a generation of lifelong learners who are equipped to thrive in an ever-changing world."
               />
             </div>
             
@@ -94,8 +94,8 @@ const Home: React.FC = () => {
                 src="/Homeschooling2.jpg"
                 width={500}
                 height={500}
-                pre_text="Our Curriculum"
-                text="Our goals"
+                tOverlay="Our Curriculum"
+                tArea="Our goals"
               />
             </div>
           
@@ -105,7 +105,7 @@ const Home: React.FC = () => {
 
         <div className={styles.midContainerTwo}>
           <h1>
-            This is a place where you can be you
+            A place where you can be you
           </h1>
         </div>
 
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
 
         <div className={styles.slidingBannerContainer}>
           <div className={styles.slidingBanner}>
-          Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub Homeschooling Hub 
+          HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub 
           </div>
         </div>
 
