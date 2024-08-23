@@ -7,15 +7,17 @@ import ImageTextArea from "./components/imageText";
 import Link from "next/link";
 import SlidingLogoBanner from "./components/slidingBanner";
 import { createClickListener } from "./components/scrollWhenClicked";
+import { useRouter } from "next/navigation";
 
-const Home: React.FC = () => 
+export default function Home()
+{
+  const router = useRouter();
+
+  const handleClick = () =>
   {
-  
-  const destinationDiv = useRef<HTMLDivElement>(null);
-
-  const clickToScroll = () => {
-    destinationDiv.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+    //
+    router.push("/academics");
+  }
 
   const [loading, setLoading] = useState(true);
 
@@ -47,6 +49,7 @@ const Home: React.FC = () =>
     return <Loading />;
   }
 
+  
 
   
 
@@ -73,7 +76,7 @@ const Home: React.FC = () =>
           </div> 
 
           <div className={styles.topBannerLinksContainer}>
-            <h1 onClick={clickToScroll}>Academics</h1>
+            <h1 onClick={handleClick}> academics</h1>
             <h2>Our Team</h2>
             <h3>Contact Us</h3>
           </div>
@@ -181,7 +184,7 @@ const Home: React.FC = () =>
           </div>
         </div>
 
-        <div ref={destinationDiv} className={styles.midContainerFour}>
+        <div className={styles.midContainerFour}>
           <h1>Academics</h1>
         </div>
         
@@ -196,7 +199,3 @@ const Home: React.FC = () =>
   );
 
 };
-
-
-
-export default Home;
