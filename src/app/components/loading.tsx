@@ -3,19 +3,19 @@ import styles from "./loading.module.css";
 
 const Loading = () => {
   const [text, setText] = useState('');
-  const phrase = 'OppenMinds';
+  const phrase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
   useEffect(() => {
     let index = 0;
 
     const interval = setInterval(() => {
-      setText((prev) => prev + phrase.charAt(index));
+      setText((prev) => phrase.charAt(index));
       index += 1;
 
-      if (index === phrase.length) {
+      if (index === phrase.length - 1) {
         clearInterval(interval);
       }
-    }, 450); // Adjust the speed here (per letter)
+    }, 90); // Adjust the speed here (per letter)
 
     return () => clearInterval(interval); // Clean up the interval
   }, [phrase]);
@@ -32,9 +32,18 @@ const Loading = () => {
         </h3>
       </div>
 
-      <h1 className={styles.mainText}>
-        {text}
+      <div className={styles.alphabetText}>
+        <h1>
+          {text}
         </h1>
+      </div>
+
+      <div className={styles.mainText}>
+        <h4>
+          Open Minds
+        </h4>
+      </div>
+      
     </div>
   );
 };

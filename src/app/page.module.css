@@ -2,9 +2,8 @@
 {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     
-    background-color: rgb(0, 14, 24);
+    background-color: rgb(255, 255, 255);
     /*background-color: rgb(255, 255, 255);*/
 }
 
@@ -15,8 +14,61 @@
 
         /*background image*/
         /*border parameters*/
-        padding: 0.2rem;
-        margin: 0.2rem;
+    }
+    .topBannerContainer
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        background-color: rgb(36, 138, 163);
+        position: fixed;
+        z-index: 5;
+    }
+
+    .topBannerLinksContainer
+    {
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .topBannerLinksContainer h1
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h1:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+    .topBannerLinksContainer h2
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h2:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+    .topBannerLinksContainer h3
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h3:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
     }
 
         .logo
@@ -26,53 +78,51 @@
             position: fixed;
             z-index: 1000;
             cursor: pointer;
-            margin-top: 0.4rem;
-            transform: translate(7.4rem, 0.8rem);
+            transform: translate(5.9rem, 1rem);
         }
         /*default, accessed via personal computer*/
-        .logoContainer
+        .topBannerLogoContainer
         {
             display: flex;
-            align-items: flex-start;
         }
 
-            .logoContainer h1
-            /*Homeschooling*/
+            .topBannerLogoContainer h1
+            /*H*/
             {
                 display: flex;
                 
                 /*border parameters*/
                 padding: 0.25rem;
                 margin: 0.25rem;
-                margin-left: 4rem;
+                margin-left: 3.5rem;
                 
                 /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
                 color: rgb(0, 63, 49);
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 4rem;
+                font-size: 3rem;
                 font-weight: 400;
                 text-transform: uppercase;
             }
 
-            .logoContainer h5
-            /*Homeschooling*/
+            .topBannerLogoContainer h5
+            /*omeschooling*/
             {
                 display: flex;
                 
                 /*border parameters*/
                 padding: 0.25rem;
                 margin: 0.25rem;
-                margin-left: 3.4rem;
+                margin-left: 2rem;
                 
                 /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
                 color: rgb(0, 63, 49);
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 4rem;
+                font-size: 3rem;
                 font-weight: 400;
                 text-transform: uppercase;
             }
 
-            .logoContainer h2
+            .topBannerLogoContainer h2
             /*hub*/
             {
                 display: flex;
@@ -89,7 +139,7 @@
                 /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
                 color:rgb(0, 45, 104);
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 4rem;
+                font-size: 3rem;
                 text-align:left;
             }
 
@@ -98,13 +148,13 @@
             /*rule, if accessed via tablet*/
             @media (max-width: 768px)
             {
-                .logoContainer
+                .topBannerLogoContainer
                 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                 }
-                    .logoContainer h1
+                    .topBannerLogoContainer h1
                     {   
                         /*parameters, text, where it is*/
                         display: flex;
@@ -121,13 +171,13 @@
             /*rule, if accessed via smartphone*/
             @media (max-width: 480px)
             {
-                .logoContainer
+                .topBannerLogoContainer
                 {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                 }
-                    .logoContainer h1
+                    .topBannerLogoContainer h1
                     {   
                         display: flex;
                         align-items: flex-start;
@@ -139,7 +189,7 @@
                     }
             }
 
-            .logoContainer img
+            .topBannerLogoContainer img
             {
                 display: flex;
                 /*border parameters*/
@@ -203,31 +253,29 @@
     .videoContainer
     {
         display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
     }
 
     .videoContainer video
-{
-    width: 100%;
-    height: 130%;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-}
+    {
+        width: 100%;
+        height: 130%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
 
     .midContainerOne
     {
         display: flex;
         justify-content: center;
-        margin: 1rem;
-        padding: 1rem;
         background-color:rgb(0, 20, 24);
         clip-path: polygon()
     }

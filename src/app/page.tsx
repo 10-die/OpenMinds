@@ -2,12 +2,21 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Loading from "./components/loading";
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useRef, useState, useEffect, Suspense } from 'react';
 import ImageTextArea from "./components/imageText";
 import Link from "next/link";
 import SlidingLogoBanner from "./components/slidingBanner";
+import { createClickListener } from "./components/scrollWhenClicked";
 
-const Home: React.FC = () => {
+const Home: React.FC = () => 
+  {
+  
+  const destinationDiv = useRef<HTMLDivElement>(null);
+
+  const clickToScroll = () => {
+    destinationDiv.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const [loading, setLoading] = useState(true);
 
   const loadDuration = 5000; // duration of loading screen (in ms)
@@ -38,37 +47,38 @@ const Home: React.FC = () => {
     return <Loading />;
   }
 
+
   
 
   return (
     <main className={styles.mainContainer}>
       
         <div className={styles.topContainer}>
+          <div className={styles.topBannerContainer}>
 
-          <div className={styles.logoContainer}>
+           <div className={styles.topBannerLogoContainer}>
+              <h1>H</h1>
               <Image className={styles.logo}
                 alt="Open Minds Logo 1"
                 src="/OpenMindsLogoTwo.png"
-                width={60}
-                height={60}
+                width={45}
+                height={45}
                 onClick={handleLogoClick}
               />
+               <h5>meschooling</h5>
             
-            <h1>H</h1> <h5>meschooling</h5>
-            
-            <h2>
-              hub
-            </h2>
-          </div>
+              <h2>
+                hub
+              </h2>
+          </div> 
 
-          <div className={styles.slogan}>
-            <h3>
-                Think
-            </h3>
-            <h4>
-              Outside
-            </h4>
+          <div className={styles.topBannerLinksContainer}>
+            <h1 onClick={clickToScroll}>Academics</h1>
+            <h2>Our Team</h2>
+            <h3>Contact Us</h3>
           </div>
+            
+        </div>
 
         </div>
 
@@ -170,6 +180,12 @@ const Home: React.FC = () => {
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
           </div>
         </div>
+
+        <div ref={destinationDiv} className={styles.midContainerFour}>
+          <h1>Academics</h1>
+        </div>
+        
+
 
         <div className={styles.bottomContainer}>
           <div>
