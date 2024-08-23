@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Loading from "./components/loading";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import ImageTextArea from "./components/imageText";
 import Link from "next/link";
 import SlidingLogoBanner from "./components/slidingBanner";
@@ -38,6 +38,8 @@ const Home: React.FC = () => {
     return <Loading />;
   }
 
+  
+
   return (
     <main className={styles.mainContainer}>
       
@@ -71,12 +73,10 @@ const Home: React.FC = () => {
         </div>
 
         <div className={styles.videoContainer}>
-            <video 
-              src={require("./public/BackgroundVideoOne.mp4")} 
-              autoPlay 
-              muted 
-              loop 
-            />
+          <video autoPlay loop>
+            <source src="/BackgroundVideoOne.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div className={styles.midContainerOne}>
@@ -180,5 +180,7 @@ const Home: React.FC = () => {
   );
 
 };
+
+
 
 export default Home;
