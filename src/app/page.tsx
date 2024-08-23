@@ -70,10 +70,21 @@ const Home: React.FC = () => {
 
         </div>
 
+        <div className={styles.videoContainer}>
+            <video 
+              src={require("./public/BackgroundVideoOne.mp4")} 
+              autoPlay 
+              muted 
+              loop 
+            />
+        </div>
+
         <div className={styles.midContainerOne}>
         <h1>
           The Box.
         </h1>
+
+          
           <div className={styles.imageContainer}>
 
             <div className={styles.imageOne}>
