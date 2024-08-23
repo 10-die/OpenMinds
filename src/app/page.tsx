@@ -123,7 +123,6 @@ const Home: React.FC = () => {
         <div className={styles.slidingBannerContainer}>
           <div className={styles.slidingBanner}>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <h1>hello</h1>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
@@ -157,15 +156,12 @@ const Home: React.FC = () => {
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <h1>bye</h1>
               <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
           </div>
         </div>
 
         <div className={styles.bottomContainer}>
           <div>
-            <h1>homeschooling hub</h1>
-            <h1>homeschooling hub</h1>
           </div>
         </div>
 

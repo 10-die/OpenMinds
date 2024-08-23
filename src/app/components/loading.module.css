@@ -20,12 +20,30 @@
     color: rgb(79, 167, 207);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 15.5rem;
-    transform: translateX(-1rem);
+    animation: fadeOut 1s linear;
+    animation-delay: 3s;
+  }
+
+  @keyframes fadeOut 
+  {
+    0%
+    {
+      opacity: 100%;
+    }
+    95%
+    {
+      opacity: 100%;
+    }
+    100%
+    {
+      opacity: 0%;
+    }
   }
 
  
   .auxiliaryText h2
   {
+    /*crafting the keys that...*/
     display: flex;
     justify-content: center;
     color: rgb(0, 30, 197);
@@ -40,6 +58,7 @@
 
   .auxiliaryText h3
   {
+    /*aspiring to...*/
     display: flex;
     justify-content: center;
     color: rgb(16, 79, 173);
