@@ -9,12 +9,14 @@
   .Image 
   {
     /*if, cursor hovers, turn to pointer*/
+    transition: opacity 30% 25s ease-out;
+
   }
 
   .Image:hover
   {
-    /*if, cursor hovers, turn to pointer
-    transform: translateX(60%);*/
+    /*if, cursor hovers, turn to pointer*/
+    
   }
 
  
@@ -25,17 +27,20 @@
     /*position, as close as possible to the parent container*/
     position: absolute;
 
+
     /* position, from beneath the parent container, to the middle
     animation: slideLeft 15s ease-in;*/
 
-    animation: fadeIn 15s ease-out;
+    animation: fadeIn 25s ease-out;
     
     /* position, from behind the parent container, to sit in front of it*/
-    z-index: -1;
+    z-index: 1;
 
     /*parameter, text area size*/
     width: 100%;
     height: 100%;
+
+    left: 100%;
 
     /*rule, cannot be resized*/
     resize: none;
@@ -68,16 +73,22 @@
     {
       opacity: 0%;
       transform: translateX(0%);
+      
     }
-    10%
+    5%
+    {
+      opacity: 100%;
+      transform: translateX(-100%);
+    }
+    99%
     {
       opacity: 100%;
       transform: translateX(-100%);
     }
     100%
     {
-      opacity: 100%;
-      transform: translateX(-100%);
+      opacity: 0%;
+      transform: translateX(0%);
     }
   }
   

@@ -3,13 +3,14 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Loading from "./components/loading";
 import React, { useState, useEffect } from 'react';
-import ImageText from "./components/imageText";
+import ImageTextArea from "./components/imageText";
 import Link from "next/link";
+import SlidingLogoBanner from "./components/slidingBanner";
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
-  const loadDuration = 6000; // duration of loading screen (in ms)
+  const loadDuration = 5000; // duration of loading screen (in ms)
 
   // default loading screen when site is accessed
   useEffect(() => {
@@ -51,9 +52,8 @@ const Home: React.FC = () => {
                 onClick={handleLogoClick}
               />
             
-            <h1>
-                Homeschooling
-            </h1>
+            <h1>H</h1> <h5>meschooling</h5>
+            
             <h2>
               hub
             </h2>
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
           <div className={styles.imageContainer}>
 
             <div className={styles.imageOne}>
-              <ImageText
+              <ImageTextArea
                 alt="Image 1"
                 src="/Homeschooling1.jpg"
                 width={500}
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
             
         
             <div className={styles.imageTwo}>
-              <ImageText
+              <ImageTextArea
                 alt="Image 2"
                 src="/Homeschooling2.jpg"
                 width={500}
@@ -105,7 +105,7 @@ const Home: React.FC = () => {
 
         <div className={styles.midContainerTwo}>
           <h1>
-            A place where you can be you
+            A place where <h2> you </h2> can be <h3> you! </h3>
           </h1>
         </div>
 
@@ -113,11 +113,59 @@ const Home: React.FC = () => {
           <h1>
             More than just Academia
           </h1>
+
+          <div className={styles.buttons}>
+            <button>contact us</button>
+            <button onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScby0QaHcurnl21tUz_OAjXScRTvHdIMfEjxdFZvUZ5Rqz7ng/viewform?usp=sf_link'}>interested in homeschooling?</button>
+          </div>
         </div>
 
         <div className={styles.slidingBannerContainer}>
           <div className={styles.slidingBanner}>
-          HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub HOMESCHOOLINGhub 
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <h1>hello</h1>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <h1>bye</h1>
+              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+          </div>
+        </div>
+
+        <div className={styles.bottomContainer}>
+          <div>
+            <h1>homeschooling hub</h1>
+            <h1>homeschooling hub</h1>
           </div>
         </div>
 

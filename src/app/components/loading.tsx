@@ -15,7 +15,7 @@ const Loading = () => {
       if (index === phrase.length) {
         clearInterval(interval);
       }
-    }, 500); // Adjust the speed here (per letter)
+    }, 450); // Adjust the speed here (per letter)
 
     return () => clearInterval(interval); // Clean up the interval
   }, [phrase]);
