@@ -11,12 +11,12 @@ import { useRouter } from "next/navigation";
 
 export default function Home()
 {
-  const router = useRouter();
+  
 
   const handleClick = () =>
   {
     //
-    router.push("/academics");
+    router.push("/academicsa");
   }
 
   const [loading, setLoading] = useState(true);
@@ -32,7 +32,7 @@ export default function Home()
 
     return () => clearTimeout(timer);
   }, []);
-
+const router = useRouter();
   // loading screen when logo is clicked
   const handleLogoClick = () =>
   {
@@ -48,6 +48,8 @@ export default function Home()
   if (loading) {
     return <Loading />;
   }
+
+  
 
   
 
@@ -76,7 +78,8 @@ export default function Home()
           </div> 
 
           <div className={styles.topBannerLinksContainer}>
-            <h1 onClick={handleClick}> academics</h1>
+            <h1 onClick={() => router.push("/academicss")}> academics</h1>
+            
             <h2>Our Team</h2>
             <h3>Contact Us</h3>
           </div>
