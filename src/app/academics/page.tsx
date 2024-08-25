@@ -9,7 +9,6 @@ export default function Academics()
 
     const handleClick = () =>
     {
-        //
         router.push("/page");
     };
 

@@ -18,8 +18,20 @@ const TopBanner = () =>
     const handleAcademicsClick = async () =>
     {
         return router.push("/academics")
-        console.log("handleAcademicsClick");
+        console.log("academicsClicked");
     };
+
+    const handleOurTeamClick = async () =>
+    {
+        return router.push("/ourTeam")
+        console.log("ourTeamClicked");
+    };
+
+    const handleContactUsClick = async () =>
+      {
+          return router.push("/contactUs")
+          console.log("ourTeamClicked");
+      };
 
     return(
         <div className={styles.topBannerContainer}>
@@ -42,8 +54,8 @@ const TopBanner = () =>
 
           <div className={styles.topBannerLinksContainer}>
             <h1 onClick={handleAcademicsClick}> academics</h1>
-            <h2>Our Team</h2>
-            <h3>Contact Us</h3>
+            <h2 onClick={handleOurTeamClick}>Our Team</h2>
+            <h3 onClick={handleContactUsClick}>Contact Us</h3>
           </div>
             
         </div>
