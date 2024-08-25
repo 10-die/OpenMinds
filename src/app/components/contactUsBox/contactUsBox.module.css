@@ -1,0 +1,36 @@
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 50%;
+    color: black;
+}
+
+.mainContainer input
+{
+    /*used to put and element in the middle of the div container*/
+    display: flex;
+    justify-content: center; 
+    width: 50%;
+
+    margin: 1rem;
+    padding: 0.3rem;
+}
+
+.mainContainer textArea
+{
+    /*used to put and element in the middle of the div container*/
+    display: flex;
+
+    margin: 1rem;
+    padding: 0.3rem;
+    width: 70%;
+}
+
+.mainContainer button
+{
+    background-color: rgb(0, 95, 95);
+    margin: 1rem;
+    padding: 1rem;
+}

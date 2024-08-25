@@ -55,7 +55,7 @@ const TopBanner = () =>
           <div className={styles.topBannerLinksContainer}>
             <h1 onClick={handleAcademicsClick}> academics</h1>
             <h2 onClick={handleOurTeamClick}>Our Team</h2>
-            <h3 onClick={handleContactUsClick}>Contact Us</h3>
+            <h3 onClick={handleContactUsClick }>Contact Us</h3>
           </div>
             
         </div>
