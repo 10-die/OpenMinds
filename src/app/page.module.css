@@ -264,19 +264,16 @@
     .videoContainer video
     {
         width: 100%;
-        height: 130%;
+        height: 100%;
         object-fit: cover;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -30%);
     }
 
     .midContainerOne
     {
         display: flex;
         justify-content: center;
-        background-color:rgb(0, 20, 24);
+        background-color:rgb(255, 255, 255);
         clip-path: polygon()
     }
 

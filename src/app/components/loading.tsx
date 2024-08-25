@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import styles from "./loading.module.css";
 
 const Loading = () => {
+  
+
+  
+
   const [text, setText] = useState('');
   const phrase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -19,6 +23,9 @@ const Loading = () => {
 
     return () => clearInterval(interval); // Clean up the interval
   }, [phrase]);
+//
+  
+
 
   return (
     <div className={styles.container}>

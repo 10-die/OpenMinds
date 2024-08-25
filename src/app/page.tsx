@@ -7,85 +7,59 @@ import ImageTextArea from "./components/imageText";
 import Link from "next/link";
 import SlidingLogoBanner from "./components/slidingBanner";
 import { createClickListener } from "./components/scrollWhenClicked";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
+import TopBanner from "./components/topBanner";
 
 export default function Home()
 {
+  const router = useRouter();
   
 
-  const handleClick = () =>
+  const handleAcademicsClick = async () =>
   {
-    //
-    router.push("/academicsa");
+    return router.push("/academics")
   }
 
   const [loading, setLoading] = useState(true);
+  
 
-  const loadDuration = 5000; // duration of loading screen (in ms)
-
-  // default loading screen when site is accessed
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, loadDuration);
-    
-
-    return () => clearTimeout(timer);
-  }, []);
-const router = useRouter();
-  // loading screen when logo is clicked
-  const handleLogoClick = () =>
+  useEffect(() =>
   {
-    setLoading(true);
-
-    const timer = setTimeout(() => {
+    /*localStorage.setItem("hasLoadedOnce", "true");
+    to reset the hasLoadedOnce variable in the system*/
+    const hasLoadedOnce = localStorage.getItem("hasLoadedOnce");
+    console.log(localStorage.getItem("hasLoadedOnce"));
+    if (hasLoadedOnce == "true")
+    {
+      
+      const loadDuration = 5000; // duration of loading screen (in ms)
+      const timer = setTimeout(() => 
+        {
+          setLoading(false);
+          localStorage.setItem("hasLoadedOnce", "false");
+          console.log("1#loading = 0");
+          console.log(localStorage.getItem("hasLoadedOnce"));
+        }, loadDuration);
+        return () => clearTimeout(timer);
+    }
+    else if (hasLoadedOnce == "false")
+    {
       setLoading(false);
-    }, loadDuration);
+      console.log("2#loading > 0");
+      console.log(localStorage.getItem("hasLoadedOnce"));
+      
+    }
+  }, [])
 
-    return () => clearTimeout(timer);
-  };
-
-  if (loading) {
-    return <Loading />;
+  if (loading) 
+  {
+    return <Loading/>;
   }
-
-  
-
-  
-
-  
-
   return (
     <main className={styles.mainContainer}>
       
         <div className={styles.topContainer}>
-          <div className={styles.topBannerContainer}>
-
-           <div className={styles.topBannerLogoContainer}>
-              <h1>H</h1>
-              <Image className={styles.logo}
-                alt="Open Minds Logo 1"
-                src="/OpenMindsLogoTwo.png"
-                width={45}
-                height={45}
-                onClick={handleLogoClick}
-              />
-               <h5>meschooling</h5>
-            
-              <h2>
-                hub
-              </h2>
-          </div> 
-
-          <div className={styles.topBannerLinksContainer}>
-            <h1 onClick={() => router.push("/academicss")}> academics</h1>
-            
-            <h2>Our Team</h2>
-            <h3>Contact Us</h3>
-          </div>
-            
-        </div>
-
+          <TopBanner />
         </div>
 
         <div className={styles.videoContainer}>

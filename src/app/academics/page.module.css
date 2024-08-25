@@ -1,0 +1,51 @@
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(255, 255, 255);
+    height: 150vh;
+}
+
+    .topContainer
+    {
+        display: flex;
+        flex-direction: column;
+
+        /*background image*/
+        /*border parameters*/
+    }
+
+    .midContainerOne
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textContainerOne h1
+    {
+        /*used to put and element in the middle of the div container*/
+        display: flex;
+        justify-content: center; 
+
+        margin: 2rem;
+        padding: 2rem;
+
+        color: rgb(0, 161, 224);
+        font-size: 5rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .textContainerOne p
+    {
+        display: flex;
+
+        margin: 2rem;
+        padding: 2rem;
+
+        color: black;
+        font-size: 2rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }

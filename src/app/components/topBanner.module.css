@@ -1,0 +1,190 @@
+.topContainer
+    {
+        display: flex;
+        flex-direction: column;
+
+        /*background image*/
+        /*border parameters*/
+    }
+    .topBannerContainer
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        background-color: rgb(36, 138, 163);
+        z-index: 5;
+    }
+
+    .topBannerLinksContainer
+    {
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .topBannerLinksContainer h1
+    {
+        display: flex;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h1:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+    .topBannerLinksContainer h2
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h2:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+    .topBannerLinksContainer h3
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h3:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+        .logo
+        {
+            display: flex;
+            align-items: flex-start;
+            position: fixed;
+            z-index: 1000;
+            cursor: pointer;
+            transform: translate(5.9rem, 1rem);
+        }
+        /*default, accessed via personal computer*/
+        .topBannerLogoContainer
+        {
+            display: flex;
+        }
+
+            .topBannerLogoContainer h1
+            /*H*/
+            {
+                display: flex;
+
+                cursor: pointer;
+                
+                /*border parameters*/
+                padding: 0.25rem;
+                margin: 0.25rem;
+                margin-left: 3.5rem;
+                
+                /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
+                color: rgb(0, 63, 49);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 3rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .topBannerLogoContainer h5
+            /*omeschooling*/
+            {
+                display: flex;
+
+                cursor: pointer;
+                
+                /*border parameters*/
+                padding: 0.25rem;
+                margin: 0.25rem;
+                margin-left: 2rem;
+                
+                /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
+                color: rgb(0, 63, 49);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 3rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .topBannerLogoContainer h2
+            /*hub*/
+            {
+                display: flex;
+
+                /*location*/
+                transform: translate(-0.5rem, 0.45rem);
+                
+                /*border parameters*/
+                align-items:start;
+                justify-content: flex-start;
+                
+
+                
+                /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
+                color:rgb(0, 45, 104);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 3rem;
+                text-align:left;
+            }
+
+            
+
+            /*rule, if accessed via tablet*/
+            @media (max-width: 768px)
+            {
+                .topBannerLogoContainer
+                {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                    .topBannerLogoContainer h1
+                    {   
+                        /*parameters, text, where it is*/
+                        display: flex;
+                        align-items: flex-start;
+                        padding-left: 0.3rem;
+                        /*parameters, text, how it looks*/
+                        color: rgb(40, 149, 153);
+                        font-size: 2.3rem;
+                        letter-spacing: 0.2rem;
+                        
+                    }
+            }
+
+            /*rule, if accessed via smartphone*/
+            @media (max-width: 480px)
+            {
+                .topBannerLogoContainer
+                {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                    .topBannerLogoContainer h1
+                    {   
+                        display: flex;
+                        align-items: flex-start;
+                        color: rgb(40, 149, 153);
+                        font-size: 1.6rem;
+                        letter-spacing: 0.2rem;
+                        /*border parameters*/
+                        padding-left: 0.3rem;
+                    }
+            }
+
+            .topBannerLogoContainer img
+            {
+                display: flex;
+                /*border parameters*/
+                padding-top: 0.4rem;
+            }
