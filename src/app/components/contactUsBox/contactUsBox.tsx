@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import styles from './contactUsBox.module.css';
+import styles from './ContactUsBox.module.css';
 
 const ContactUsBox = () =>
 {

@@ -1,5 +1,5 @@
 import { redirect, useRouter } from "next/navigation";
-import styles from "./topBanner.module.css"
+import styles from "./TopBanner.module.css"
 import Image from "next/image";
 
 const TopBanner = () =>
@@ -17,19 +17,19 @@ const TopBanner = () =>
     // route to the page specified
     const handleAcademicsClick = async () =>
     {
-        return router.push("/academics")
+        return router.push("/pages/academics")
         console.log("academicsClicked");
     };
 
     const handleOurTeamClick = async () =>
     {
-        return router.push("/ourTeam")
+        return router.push("/pages/ourTeam")
         console.log("ourTeamClicked");
     };
 
     const handleContactUsClick = async () =>
       {
-          return router.push("/contactUs")
+          return router.push("/pages/contactUs")
           console.log("ourTeamClicked");
       };
 

@@ -1,28 +1,19 @@
 "use client"
 import Image from "next/image";
 import styles from "./page.module.css";
-import Loading from "./components/loading";
+import Loading from "./components/loading/Loading";
 import React, { useRef, useState, useEffect, Suspense } from 'react';
-import ImageTextArea from "./components/imageText";
+import ImageTextArea from "./components/imageText/ImageText";
 import Link from "next/link";
-import SlidingLogoBanner from "./components/slidingBanner";
-import { createClickListener } from "./components/scrollWhenClicked";
+import SlidingBanner from "./components/slidingBanner/SlidingBanner";
+import { createClickListener } from "./components/scrollToTop/ScrollToTop";
 import { redirect, useRouter } from "next/navigation";
-import TopBanner from "./components/topBanner";
+import TopBanner from "./components/topBanner/TopBanner";
 
 export default function Home()
 {
-  const router = useRouter();
-  
-
-  const handleAcademicsClick = async () =>
-  {
-    return router.push("/academics")
-  }
-
   const [loading, setLoading] = useState(true);
   
-
   useEffect(() =>
   {
     /*localStorage.setItem("hasLoadedOnce", "true");
@@ -55,6 +46,7 @@ export default function Home()
   {
     return <Loading/>;
   }
+  
   return (
     <main className={styles.mainContainer}>
       

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
-import styles from "@/app/components/imageText.module.css"
+import styles from "./ImageText.module.css"
 
 interface ImageTextHandler
 {

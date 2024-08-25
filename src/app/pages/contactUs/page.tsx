@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import TopBanner from "../components/topBanner";
-import ContactUsBox from "../components/contactUsBox/contactUsBox";
+import TopBanner from "../../components/topBanner/TopBanner"
+import ContactUsBox from "../../components/contactUsBox/ContactUsBox";
 import styles from "./page.module.css";
 
 export default function contactUs()

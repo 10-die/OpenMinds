@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from "react";
 import Image from "next/image";
-import styles from "./slidingBanner.module.css"
+import styles from "./SlidingBanner.module.css"
 
-
-
-const SlidingLogoBanner = () =>
+const SlidingBanner = () =>
 {
     
     return(
@@ -19,4 +17,4 @@ const SlidingLogoBanner = () =>
     );
 };
 
-export default SlidingLogoBanner;
+export default SlidingBanner;

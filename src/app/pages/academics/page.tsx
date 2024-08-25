@@ -1,5 +1,5 @@
 "use client"
-import TopBanner from "../components/topBanner";
+import TopBanner from "../../components/topBanner/TopBanner";
 import styles from "./page.module.css"
 import { useRouter } from "next/navigation";
 
