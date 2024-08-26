@@ -23,7 +23,7 @@
         justify-content: center;
     }
 
-    .textContainerOne h1
+    .titleContainer h1
     {
         /*used to put and element in the middle of the div container*/
         display: flex;
@@ -38,7 +38,7 @@
 
     }
 
-    .textContainerOne p
+    .titleContainer p
     {
         display: flex;
 

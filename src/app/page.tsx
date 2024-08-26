@@ -16,14 +16,14 @@ export default function Home()
   
   useEffect(() =>
   {
-    /*localStorage.setItem("hasLoadedOnce", "true");
-    to reset the hasLoadedOnce variable in the system*/
+    localStorage.setItem("hasLoadedOnce", "true");
+    /*to reset the hasLoadedOnce variable in the system*/
     const hasLoadedOnce = localStorage.getItem("hasLoadedOnce");
     console.log(localStorage.getItem("hasLoadedOnce"));
     if (hasLoadedOnce == "true")
     {
       
-      const loadDuration = 5000; // duration of loading screen (in ms)
+      const loadDuration = 6000; // duration of loading screen (in ms)
       const timer = setTimeout(() => 
         {
           setLoading(false);
@@ -52,6 +52,12 @@ export default function Home()
       
         <div className={styles.topContainer}>
           <TopBanner />
+        </div>
+
+        <div className={styles.sloganContainer}>
+          <h1>
+            
+          </h1>
         </div>
 
         <div className={styles.videoContainer}>

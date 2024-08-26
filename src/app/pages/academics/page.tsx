@@ -19,7 +19,7 @@ export default function Academics()
              </div>
 
             <div className={styles.midContainerOne}>
-                <div className={styles.textContainerOne}>
+                <div className={styles.titleContainer}>
                     <h1>Academics</h1>
                     <p>Our school offers a robust academic program with a focus on developing critical thinking and problem-solving skills</p>
                 </div>

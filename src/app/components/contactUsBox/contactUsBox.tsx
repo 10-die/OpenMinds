@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from './ContactUsBox.module.css';
 import { supabase } from "@/lib/supabaseClient";
+import AutoResizingTextArea from "../autoResizingTextArea/autoResizingTextArea";
 
 const ContactUsBox = () =>
 {
@@ -34,11 +35,13 @@ const ContactUsBox = () =>
             setMessage("");
         }
     }
+
+    
     
     return(
-        <div className={styles.mainContainer}>
-            <div className={styles.midContainerOne}>
-                <form onSubmit={handleSubmit} className={styles.form}>
+                <form onSubmit={handleSubmit} className={styles.formContainer}>
+
+                    <div>
                     <input
                         name="firstName"
                         placeholder="First Name"
@@ -46,6 +49,9 @@ const ContactUsBox = () =>
                         onChange={(e) => setFirstName(e.target.value)}
                         required
                         />
+                    </div>
+
+                    <div>
                     <input
                         name="lastName"
                         placeholder="Last Name"
@@ -53,6 +59,9 @@ const ContactUsBox = () =>
                         onChange={(e) => setLastName(e.target.value)}
                         required
                         />
+                    </div>
+
+                    <div>
                     <input
                         name="email"
                         placeholder="Email"
@@ -60,17 +69,18 @@ const ContactUsBox = () =>
                         onChange={(e) => setEmail(e.target.value)}
                         required
                         />
-                    <textarea
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        placeholder="Message"
-                        />
-                    <button type="submit">
-                        Submit
-                    </button>
+                    </div>
+
+                    <div className={styles.textArea}>
+                        <AutoResizingTextArea/>
+                    </div>
+
+                    <div className={styles.button}>
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </div>
                 </form>
-            </div>
-        </div>
     );
 };
 

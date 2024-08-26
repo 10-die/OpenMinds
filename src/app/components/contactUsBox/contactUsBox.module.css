@@ -1,72 +1,85 @@
-.mainContainer
+.formContainer
 {
     display: flex;
-    justify-content: center; 
-    color: black;
-}
+    flex-direction: column;
 
-.midContainerOne
-{
-    border: 2px solid #004152;
+    color: black;
+    border: 2px solid #999999;
     border-radius: 10px;
     
-    background-color: rgb(176, 227, 255);
+    background-color: rgb(255, 255, 255);
 
-    margin: 5rem;
+    margin: 4.98rem;
     padding: 1rem;
+
+    width: 50%;
+
 }
 
-
-
-
-
-.midContainerOne input
+.formContainer input
 {
     /*used to put and element in the middle of the div container*/
     display: flex;
+    flex-direction: column;
+    justify-items: center; 
+    align-items: center;
+    margin: 1rem;
+    padding: 0.3rem;
+
+    border: 2px solid #7e7e7e;
+    border-radius: 10px;
+    width: 95%;
+    
+}
+
+.formContainer textArea
+{
+    /*used to put and element in the middle of the div container*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     margin: 1rem;
     padding: 0.3rem;
 
-    border: 2px solid #004152;
+    border: 2px solid #7e7e7e;
     border-radius: 10px;
+
+    width: 95%;
+    
+    
 }
 
-.mainContainer textArea
+#autoResizeTextArea
 {
-    /*used to put and element in the middle of the div container*/
-    display: flex;
-
-    margin: 1rem;
-    padding: 0.3rem;
-
-    border: 2px solid #004152;
-    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: hidden; /* Hide the scrollbar initially */
+    resize: none; /* Disable manual resizing */
 }
 
-.midContainerOne button
+.formContainer button
 {
     display: flex;
-    background-color: rgb(0, 95, 95);
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    
+    background-color: rgb(221, 69, 208);
     margin: 1rem;
     padding: 1rem;
 
-    border: 2px solid #004152;
+    border: 2px solid #7e7e7e;
     border-radius: 10px;
 
+    width: 95%;
+    
+
 }
 
-.form
-{
-    justify-content: center; 
-    align-items: center;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.form button
+.button
 {
     display: flex;
-    justify-content: center; 
     align-items: center;
+    height: 10vh;
 }

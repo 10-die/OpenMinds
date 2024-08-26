@@ -11,12 +11,17 @@ export default function contactUs()
 
     return(
             <main className={styles.mainContainer}>
-                <div>
-                <TopBanner />
+                <div className={styles.topContainer}>
+                    <TopBanner />
                 </div>
 
                 <div className={styles.midContainerOne}>
-                    <ContactUsBox/>
+                    <div className={styles.titleContainer}>
+                        <h1>Contact Us</h1>
+                    </div>
+                    <div className={styles.contactUsBoxContainer}>
+                        <ContactUsBox/>
+                    </div>
                 </div>
             </main>
     );
