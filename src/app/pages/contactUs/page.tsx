@@ -3,14 +3,11 @@ import React, { useState } from "react";
 import TopBanner from "../../components/topBanner/TopBanner"
 import ContactUsBox from "../../components/contactUsBox/ContactUsBox";
 import styles from "./page.module.css";
-import { supabase } from "@/"
+import { supabase } from "@/lib/supabaseClient"
 
 export default function contactUs()
 {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    
 
     return(
             <main className={styles.mainContainer}>
@@ -18,7 +15,7 @@ export default function contactUs()
                 <TopBanner />
                 </div>
 
-                <div>
+                <div className={styles.midContainerOne}>
                     <ContactUsBox/>
                 </div>
             </main>

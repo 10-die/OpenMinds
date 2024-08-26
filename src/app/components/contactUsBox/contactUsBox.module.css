@@ -1,21 +1,35 @@
 .mainContainer
 {
     display: flex;
-    flex-direction: column;
-    background-color: blue;
-    width: 50%;
+    justify-content: center; 
     color: black;
 }
 
-.mainContainer input
+.midContainerOne
+{
+    border: 2px solid #004152;
+    border-radius: 10px;
+    
+    background-color: rgb(176, 227, 255);
+
+    margin: 5rem;
+    padding: 1rem;
+}
+
+
+
+
+
+.midContainerOne input
 {
     /*used to put and element in the middle of the div container*/
     display: flex;
-    justify-content: center; 
-    width: 50%;
 
     margin: 1rem;
     padding: 0.3rem;
+
+    border: 2px solid #004152;
+    border-radius: 10px;
 }
 
 .mainContainer textArea
@@ -25,12 +39,34 @@
 
     margin: 1rem;
     padding: 0.3rem;
-    width: 70%;
+
+    border: 2px solid #004152;
+    border-radius: 10px;
 }
 
-.mainContainer button
+.midContainerOne button
 {
+    display: flex;
     background-color: rgb(0, 95, 95);
     margin: 1rem;
     padding: 1rem;
+
+    border: 2px solid #004152;
+    border-radius: 10px;
+
+}
+
+.form
+{
+    justify-content: center; 
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form button
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }

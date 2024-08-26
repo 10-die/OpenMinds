@@ -1,13 +1,14 @@
 .mainContainer
 {
-   
+    
     background-color: rgb(255, 255, 255);
     height: 150vh;
 }
 
-    .midContainerOne
+    .midContainerOne ContactUsBox
     {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: brown;
     } 
