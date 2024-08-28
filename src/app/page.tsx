@@ -62,7 +62,7 @@ export default function Home()
     <main className={styles.mainContainer}>
       
         <div className={styles.topContainer}>
-          <TopBanner />
+          <TopBanner/>
         </div>
 
         <div className={styles.sloganContainer}>

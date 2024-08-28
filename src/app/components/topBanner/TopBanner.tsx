@@ -1,9 +1,18 @@
 import { redirect, useRouter } from "next/navigation";
 import styles from "./TopBanner.module.css"
 import Image from "next/image";
+import { TOP_BANNER_COLOR } from "@/customiseComponents/topBannerBackgroundColor";
 
-const TopBanner = () =>
+  //color parameter
+    interface setTopBannerColor
+    {
+      color?: string // individual color
+    }
+    
+const TopBanner: React.FC<setTopBannerColor> = ({ color }) =>
 {
+    
+
     // create a router object
     const router = useRouter();
 
@@ -11,30 +20,30 @@ const TopBanner = () =>
     const handleLogoClick = async () =>
     {
         return router.push("/")
-        console.log("handleLogoClick");
-    }
+        console.log("logoClicked, topBanner");
+    };
 
     // route to the page specified
     const handleAcademicsClick = async () =>
     {
         return router.push("/pages/academics")
-        console.log("academicsClicked");
+        console.log("academicsClicked, topBanner");
     };
 
     const handleOurTeamClick = async () =>
     {
         return router.push("/pages/ourTeam")
-        console.log("ourTeamClicked");
+        console.log("ourTeamClicked, topBanner");
     };
 
     const handleContactUsClick = async () =>
       {
           return router.push("/pages/contactUs")
-          console.log("ourTeamClicked");
+          console.log("contactUsClicked, topBanner");
       };
 
     return(
-        <div className={styles.topBannerContainer}>
+        <div style={{ backgroundColor: color || TOP_BANNER_COLOR}} className={styles.topBannerContainer}>
 
            <div className={styles.topBannerLogoContainer}>
               <h1 onClick={handleLogoClick} >H</h1>
