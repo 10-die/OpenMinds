@@ -40,7 +40,7 @@ const TopBanner = () =>
               <h1 onClick={handleLogoClick} >H</h1>
               <Image className={styles.logo}
                 alt="Open Minds Logo 1"
-                src="/OpenMindsLogoTwo.png"
+                src="/logos/iconLogoTwo.png"
                 width={45}
                 height={45}
                 onClick={handleLogoClick}

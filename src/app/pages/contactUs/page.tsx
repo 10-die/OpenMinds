@@ -22,6 +22,11 @@ export default function contactUs()
                     <div className={styles.contactUsBoxContainer}>
                         <ContactUsBox/>
                     </div>
+                    <div className={styles.buttonContainer}>
+                        <button onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScby0QaHcurnl21tUz_OAjXScRTvHdIMfEjxdFZvUZ5Rqz7ng/viewform?usp=sf_link'}>
+                            Express Intrest
+                        </button>
+                    </div>
                 </div>
             </main>
     );

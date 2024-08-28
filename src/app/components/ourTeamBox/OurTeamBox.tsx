@@ -1,7 +1,7 @@
-import styles from "@/app/components/teamMemberBox/TeamMemberBox.module.css"
+import styles from "@/app/components/ourTeamBox/OurTeamBox.module.css"
 import Image from "next/image";
 
-interface TeamMemberBoxConstructor
+interface OurTeamBoxConstructor
 {
     src: string;
     alt: string;
@@ -9,7 +9,7 @@ interface TeamMemberBoxConstructor
     informationText: string;
 }
 
-const TeamMemberBox: React.FC<TeamMemberBoxConstructor> = ({ src, alt, nameText, informationText }) =>
+const OurTeamBox: React.FC<OurTeamBoxConstructor> = ({ src, alt, nameText, informationText }) =>
 {
     return(
         <div className={styles.boxContainer}>
@@ -31,4 +31,4 @@ const TeamMemberBox: React.FC<TeamMemberBoxConstructor> = ({ src, alt, nameText,
     );
 };
 
-export default TeamMemberBox;
+export default OurTeamBox;

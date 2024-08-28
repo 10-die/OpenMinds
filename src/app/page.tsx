@@ -9,10 +9,21 @@ import SlidingBanner from "./components/slidingBanner/SlidingBanner";
 import { createClickListener } from "./components/scrollToTop/ScrollToTop";
 import { redirect, useRouter } from "next/navigation";
 import TopBanner from "./components/topBanner/TopBanner";
+import router from "next/router";
 
 export default function Home()
 {
   const [loading, setLoading] = useState(true);
+  
+   // create a router object
+   const router = useRouter();
+
+
+  const handleContactUsClick = async () =>
+    {
+        return router.push("/pages/contactUs")
+        console.log("ourTeamClicked");
+    };
   
   useEffect(() =>
   {
@@ -62,7 +73,7 @@ export default function Home()
 
         <div className={styles.videoContainer}>
           <video autoPlay loop>
-            <source src="/BackgroundVideoOne.mp4" type="video/mp4" />
+            <source src="/homeScreen/videos/videoOne.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -75,7 +86,7 @@ export default function Home()
             <div className={styles.imageOne}>
               <ImageTextArea
                 alt="Image 1"
-                src="/Homeschooling/One.jpg"
+                src="/homeScreen/images/imageOne.jpg"
                 width={500}
                 height={500}
                 tOverlay="Our Vision"
@@ -87,11 +98,11 @@ export default function Home()
             <div className={styles.imageTwo}>
               <ImageTextArea
                 alt="Image 2"
-                src="/Homeschooling/Two.jpg"
+                src="/homeScreen/images/imageTwo.jpg"
                 width={500}
                 height={500}
                 tOverlay="Our Curriculum"
-                tArea="Our goals"
+                tArea="Our Goals"
               />
             </div>
           
@@ -111,7 +122,7 @@ export default function Home()
           </h1>
 
           <div className={styles.buttons}>
-            <button>
+            <button onClick={handleContactUsClick}>
               contact us
             </button>
             <button onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScby0QaHcurnl21tUz_OAjXScRTvHdIMfEjxdFZvUZ5Rqz7ng/viewform?usp=sf_link'}>
@@ -122,41 +133,36 @@ export default function Home()
 
         <div className={styles.slidingBannerContainer}>
           <div className={styles.slidingBanner}>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
-              <Image src="/OpenMindsLogoTransparent.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
+              <Image src="/logos/bannerLogo.png" alt="Banner 1" width={500} height={50} className={styles.bannerImage}/>
           </div>
         </div>
 
@@ -164,7 +170,6 @@ export default function Home()
           <h1>Academics</h1>
         </div>
         
-
 
         <div className={styles.bottomContainer}>
           <div>

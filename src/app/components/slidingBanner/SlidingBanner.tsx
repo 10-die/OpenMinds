@@ -8,7 +8,7 @@ const SlidingBanner = () =>
     return(
             <div>
                 <Image 
-                    src="/OpenMindsLogoTransparent.png"
+                    src="/logos/bannerLogo.png"
                     alt="sliding banner"
                     width={1000}
                     height={50}

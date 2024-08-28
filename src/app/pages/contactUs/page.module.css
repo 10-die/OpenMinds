@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
+
+    height: 200vh;
 }
 
     .midContainerOne 
@@ -28,4 +30,33 @@
     {
         display: flex;
         justify-content: center; 
+    }
+
+    .buttonContainer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+
+    }
+
+    .buttonContainer button
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: white;
+    
+        background-color: rgb(221, 69, 208);
+        margin: 1rem;
+        padding: 1rem;
+
+        border: 2px solid #7e7e7e;
+        border-radius: 10px;
+
+        width: 50%;
+    
+
     }

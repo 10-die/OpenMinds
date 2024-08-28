@@ -324,6 +324,16 @@
         padding: 1rem;
     }
 
+
+    .imageContainer imageOne
+    {
+        align-items: flex-start;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
+
         
 
     .midContainerTwo
