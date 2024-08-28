@@ -14,7 +14,7 @@ import router from "next/router";
 export default function Home()
 {
   const [loading, setLoading] = useState(true);
-  
+
    // create a router object
    const router = useRouter();
 
@@ -27,8 +27,8 @@ export default function Home()
   
   useEffect(() =>
   {
-    localStorage.setItem("hasLoadedOnce", "true");
-    /*to reset the hasLoadedOnce variable in the system*/
+    /*localStorage.setItem("hasLoadedOnce", "true");
+    to reset the hasLoadedOnce variable in the system*/
     const hasLoadedOnce = localStorage.getItem("hasLoadedOnce");
     console.log(localStorage.getItem("hasLoadedOnce"));
     if (hasLoadedOnce == "true")
@@ -72,7 +72,7 @@ export default function Home()
         </div>
 
         <div className={styles.videoContainer}>
-          <video autoPlay loop>
+          <video autoPlay loop muted>
             <source src="/homeScreen/videos/videoOne.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
