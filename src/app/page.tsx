@@ -68,9 +68,6 @@ export default function Home()
         </div>
 
         <div className={styles.midContainerOne}>
-        <h1>
-          The Box.
-        </h1>
 
           
           <div className={styles.imageContainer}>
@@ -78,7 +75,7 @@ export default function Home()
             <div className={styles.imageOne}>
               <ImageTextArea
                 alt="Image 1"
-                src="/Homeschooling1.jpg"
+                src="/Homeschooling/One.jpg"
                 width={500}
                 height={500}
                 tOverlay="Our Vision"
@@ -90,7 +87,7 @@ export default function Home()
             <div className={styles.imageTwo}>
               <ImageTextArea
                 alt="Image 2"
-                src="/Homeschooling2.jpg"
+                src="/Homeschooling/Two.jpg"
                 width={500}
                 height={500}
                 tOverlay="Our Curriculum"
@@ -114,8 +111,12 @@ export default function Home()
           </h1>
 
           <div className={styles.buttons}>
-            <button>contact us</button>
-            <button onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScby0QaHcurnl21tUz_OAjXScRTvHdIMfEjxdFZvUZ5Rqz7ng/viewform?usp=sf_link'}>interested in homeschooling?</button>
+            <button>
+              contact us
+            </button>
+            <button onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScby0QaHcurnl21tUz_OAjXScRTvHdIMfEjxdFZvUZ5Rqz7ng/viewform?usp=sf_link'}>
+              Express Intrest
+            </button>
           </div>
         </div>
 

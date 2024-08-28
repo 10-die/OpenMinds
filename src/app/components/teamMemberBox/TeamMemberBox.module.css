@@ -1,0 +1,59 @@
+.boxContainer
+{
+    display: flex;
+
+    color: black;
+    border: 2px solid #b4b4b448;
+    border-radius: 10px;
+    
+    background-color: rgb(255, 255, 255);
+
+    margin: 6rem;
+    padding: 1rem;
+
+    width: 20%;
+
+    transition: transform 0.3s ease;
+
+    cursor: pointer;
+}
+
+.boxContainer:hover
+{
+    transform: scale(1.1);
+}
+
+.nameAndTextContainer
+{
+    width: 90%;
+}
+
+.nameAndTextContainer h1
+{
+    color: rgb(0, 137, 216);
+    font-size: 2rem;
+}
+
+.nameAndTextContainer p
+{
+    color: rgb(56, 56, 56);
+    font-size: 1rem;
+}
+
+.imageContainer
+{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+}
+
+.imageContainer img
+{
+    display: flex;
+    width: 100px; /* Set a specific width */
+    height: 100px;  /* Set the same height to maintain a square aspect ratio */
+    border-radius: 50%; /* Makes the square image round */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block; /* Prevents any inline spacing */
+}
