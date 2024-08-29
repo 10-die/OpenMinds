@@ -28,8 +28,8 @@ export default function Home()
   
   useEffect(() =>
   {
-    /*localStorage.setItem("hasLoadedOnce", "true");
-    to reset the hasLoadedOnce variable in the system*/
+    localStorage.setItem("hasLoadedOnce", "true");
+    /*to reset the hasLoadedOnce variable in the system*/
     const hasLoadedOnce = localStorage.getItem("hasLoadedOnce");
     console.log(localStorage.getItem("hasLoadedOnce"));
     if (hasLoadedOnce == "true")
