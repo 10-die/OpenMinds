@@ -1,5 +1,7 @@
 /* replace the contents of the inverted commas 
 with the hexadecimal color code of your choice*/
+
+// or copy and paste one of the following...
 // #000000 = Black
 // #FFFFFF = White
-export const TOP_BANNER_COLOR = "#36C2E2";
+export const PAGE_COLOR = "#FFFFFF";

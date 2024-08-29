@@ -1,0 +1,9 @@
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(180, 145, 145);
+    z-index: -10;
+    /*background-color: rgb(255, 255, 255);*/
+}

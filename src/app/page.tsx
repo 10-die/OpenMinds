@@ -10,6 +10,7 @@ import { createClickListener } from "./components/scrollToTop/ScrollToTop";
 import { redirect, useRouter } from "next/navigation";
 import TopBanner from "./components/topBanner/TopBanner";
 import router from "next/router";
+import { PAGE_COLOR } from "@/customiseComponents/customisePage";
 
 export default function Home()
 {
@@ -53,13 +54,14 @@ export default function Home()
     }
   }, [])
 
+  // this causes the site to stutter as it assesses the state of the loading construct, removing it makes the site run much smoother
   if (loading) 
   {
     return <Loading/>;
   }
   
   return (
-    <main className={styles.mainContainer}>
+    <main className={styles.mainContainer} style={{ backgroundColor: PAGE_COLOR }}>
       
         <div className={styles.topContainer}>
           <TopBanner/>

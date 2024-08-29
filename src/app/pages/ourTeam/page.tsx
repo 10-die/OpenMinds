@@ -3,11 +3,12 @@ import React from "react";
 import TopBanner from "../../components/topBanner/TopBanner";
 import styles from "./page.module.css"
 import OurTeamBox from "@/app/components/ourTeamBox/OurTeamBox";
+import { PAGE_COLOR } from "@/customiseComponents/customisePage";
 
 export default function ourTeam()
 {
     return(
-        <main className={styles.mainContainer}>
+        <main className={styles.mainContainer} style={{ backgroundColor: PAGE_COLOR }}>
             <div className={styles.topContainer}>
                 <TopBanner />
             </div>

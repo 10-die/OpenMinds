@@ -4,13 +4,14 @@ import TopBanner from "../../components/topBanner/TopBanner"
 import ContactUsBox from "../../components/contactUsBox/ContactUsBox";
 import styles from "./page.module.css";
 import { supabase } from "@/lib/supabaseClient"
+import { PAGE_COLOR } from "@/customiseComponents/customisePage";
 
 export default function contactUs()
 {
     
 
     return(
-            <main className={styles.mainContainer}>
+            <main className={styles.mainContainer} style={{ backgroundColor: PAGE_COLOR }}>
                 <div className={styles.topContainer}>
                     <TopBanner />
                 </div>

@@ -1,7 +1,7 @@
 import { redirect, useRouter } from "next/navigation";
 import styles from "./TopBanner.module.css"
 import Image from "next/image";
-import { TOP_BANNER_COLOR } from "@/customiseComponents/topBannerBackgroundColor";
+import { TOP_BANNER_COLOR, TOP_BANNER_LINKS_COLOR, TOP_BANNER_LINKS_FONT } from "@/customiseComponents/customiseTopBanner";
 
   //color parameter
     interface setTopBannerColor
@@ -62,9 +62,9 @@ const TopBanner: React.FC<setTopBannerColor> = ({ color }) =>
           </div> 
 
           <div className={styles.topBannerLinksContainer}>
-            <h1 onClick={handleAcademicsClick}>Academics</h1>
-            <h2 onClick={handleOurTeamClick}>Our Team</h2>
-            <h3 onClick={handleContactUsClick }>Contact Us</h3>
+            <h1 style={{ color: color || TOP_BANNER_LINKS_COLOR, fontFamily: TOP_BANNER_LINKS_FONT}}  onClick={handleAcademicsClick}>Academics</h1>
+            <h2 style={{ color: color || TOP_BANNER_LINKS_COLOR, fontFamily: TOP_BANNER_LINKS_FONT }} onClick={handleOurTeamClick}>Our Team</h2>
+            <h3 style={{ color: color || TOP_BANNER_LINKS_COLOR, fontFamily: TOP_BANNER_LINKS_FONT }} onClick={handleContactUsClick }>Contact Us</h3>
           </div>
             
         </div>
