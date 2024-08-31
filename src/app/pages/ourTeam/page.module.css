@@ -1,0 +1,36 @@
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
+
+    height: 200vh;
+}
+
+.midContainerOne
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleContainer h1
+{
+    /*used to put and element in the middle of the div container*/
+    display: flex;
+    justify-content: center; 
+
+    margin: 2rem;
+    padding: 2rem;
+
+    color: rgb(0, 161, 224);
+    font-size: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.teamMemberBoxContainerOne
+{
+    display: flex;
+    justify-items: center;
+}

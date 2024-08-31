@@ -1,1 +1,19 @@
-* text= auto
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Ensure the following file types are treated as text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.md text
+*.html text
+*.css text
+*.scss text
+
+# Treat binary files appropriately
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary

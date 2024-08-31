@@ -1,0 +1,477 @@
+.mainContainer
+{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
+}
+
+
+    .topContainer
+    {
+        display: flex;
+        flex-direction: column;
+
+        /*background image*/
+        /*border parameters*/
+    }
+    .topBannerContainer
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        background-color: rgb(36, 138, 163);
+        position: fixed;
+        z-index: 5;
+    }
+
+    .topBannerLinksContainer
+    {
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .topBannerLinksContainer h1
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h1:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+    .topBannerLinksContainer h2
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h2:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+    .topBannerLinksContainer h3
+    {
+        display: flex;
+        margin-left: 15%;
+        white-space: nowrap;
+    }
+    .topBannerLinksContainer h3:hover
+    {
+        color: rgb(0, 48, 20);
+        cursor: pointer;
+    }
+
+        .logo
+        {
+            display: flex;
+            align-items: flex-start;
+            position: fixed;
+            z-index: 1000;
+            cursor: pointer;
+            transform: translate(5.9rem, 1rem);
+        }
+        /*default, accessed via personal computer*/
+        .topBannerLogoContainer
+        {
+            display: flex;
+        }
+
+            .topBannerLogoContainer h1
+            /*H*/
+            {
+                display: flex;
+                
+                /*border parameters*/
+                padding: 0.25rem;
+                margin: 0.25rem;
+                margin-left: 3.5rem;
+                
+                /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
+                color: rgb(0, 63, 49);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 3rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .topBannerLogoContainer h5
+            /*omeschooling*/
+            {
+                display: flex;
+                
+                /*border parameters*/
+                padding: 0.25rem;
+                margin: 0.25rem;
+                margin-left: 2rem;
+                
+                /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
+                color: rgb(0, 63, 49);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 3rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .topBannerLogoContainer h2
+            /*hub*/
+            {
+                display: flex;
+
+                /*location*/
+                transform: translate(-0.5rem, 0.45rem);
+                
+                /*border parameters*/
+                align-items:start;
+                justify-content: flex-start;
+                
+
+                
+                /*text parameters sans seriff, cambria, verdana, Segoe, Times New Roman, Trebuchet MS, arial helvetica?*/
+                color:rgb(0, 45, 104);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 3rem;
+                text-align:left;
+            }
+
+            
+
+            /*rule, if accessed via tablet*/
+            @media (max-width: 768px)
+            {
+                .topBannerLogoContainer
+                {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                    .topBannerLogoContainer h1
+                    {   
+                        /*parameters, text, where it is*/
+                        display: flex;
+                        align-items: flex-start;
+                        padding-left: 0.3rem;
+                        /*parameters, text, how it looks*/
+                        color: rgb(40, 149, 153);
+                        font-size: 2.3rem;
+                        letter-spacing: 0.2rem;
+                        
+                    }
+            }
+
+            /*rule, if accessed via smartphone*/
+            @media (max-width: 480px)
+            {
+                .topBannerLogoContainer
+                {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                    .topBannerLogoContainer h1
+                    {   
+                        display: flex;
+                        align-items: flex-start;
+                        color: rgb(40, 149, 153);
+                        font-size: 1.6rem;
+                        letter-spacing: 0.2rem;
+                        /*border parameters*/
+                        padding-left: 0.3rem;
+                    }
+            }
+
+            .topBannerLogoContainer img
+            {
+                display: flex;
+                /*border parameters*/
+                padding-top: 0.4rem;
+            }
+
+        .slogan h3
+        /*Think*/
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            letter-spacing: 0.2rem;
+            color: rgb(54, 133, 126);
+            font-family:monospace;
+            /*border parameters*/
+            transform: translateX(-10%);
+            opacity: 100%;
+            animation: fadeIn 2s ease-out;
+            animation-delay: 1s;
+        }
+
+        .slogan h4
+        /*Outside*/
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7rem;
+            letter-spacing: 0.2rem;
+            color: rgb(0, 122, 92);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /*border parameters*/
+            margin-top: -4%;
+            margin-bottom: -3%;
+            transform: translate(20%, 20%);
+            opacity: 100%;
+            animation: fadeIn 2s ease-out;
+            animation-delay: 3s;
+            width: 80%;
+            z-index: -20;
+        }
+
+        @keyframes fadeIn
+            {
+                0%
+                {
+                    opacity: 100%;
+                }
+                50%
+                {
+                    opacity: 20%;
+                }
+                100%
+                {
+                opacity: 100%;
+                }
+            }
+
+    .videoContainer
+    {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(4rem);
+        animation: fadeInSlideUp 2s ease-out forwards;
+    }
+
+    @keyframes fadeInSlideUp 
+    {
+        to
+        {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .videoContainer video
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .midContainerOne
+    {
+        display: flex;
+        justify-content: center;
+        background-color:rgb(255, 255, 255);
+        clip-path: polygon()
+    }
+
+        .imageOne
+        {
+            display: flex;
+            justify-content: flex-start;
+            
+            margin: 5rem;
+            margin-top: 30%;
+        }
+
+        .imageTwo
+        {
+            justify-content: center;
+            display: flex;
+            margin: 5rem;
+        }
+
+    .midContainerOne h1
+    {
+        /*The Box*/
+        display: flex;
+        position: absolute;
+        font-size: 5rem;
+        letter-spacing: 0.2rem;
+        color: rgb(136, 177, 196);
+        font-family:Arial, Helvetica, sans-serif;
+        transform: translateY(3rem);
+    }
+    .midContainerOne Image
+    {
+        align-items: flex-start;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
+    .imageContainer imageOne
+    {
+        align-items: flex-start;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+
+
+        
+
+    .midContainerTwo
+    {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+        .midContainerTwo h1
+        {
+            /*A place where <h2> can be <h3>*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            letter-spacing: 0.2rem;
+            color: rgb(54, 133, 126);
+            font-family:monospace;
+        }
+
+        .midContainerTwo h2
+        {
+            /*you*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: rgb(0, 57, 75);
+            font-family:serif;
+            background-color: rgb(0, 150, 112);
+            margin: 1rem;
+            max-height: 8rem;
+        }
+
+        .midContainerTwo h3
+        {
+            /*you*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 8rem;
+            color: rgb(0, 71, 65);
+            font-family:cursive;
+            background-color: rgb(0, 132, 150);
+            margin: 1rem;
+            max-height: 10rem;
+        }
+
+    .midContainerThree
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(11, 0, 20, 0.452);
+    }
+
+        .midContainerThree h1
+        {
+            display: flex;
+            font-size: 5rem;
+            letter-spacing: 0.2rem;
+            color: rgb(54, 133, 126);
+            font-family:monospace;
+        }
+
+        .buttons 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+            margin-bottom: 0;
+            padding: 1rem;
+            padding-bottom: 0;
+            position: relative;
+        }
+
+        .buttons button
+        {
+            background-color: transparent;
+            padding: 1.5rem 1rem;
+            margin: 0 3rem;
+            border: solid white 2px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.2rem;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.25s background-color;
+        }
+
+        .buttons button:hover
+        {
+            background-color: rgb(33, 169, 179);
+            color: black;
+            transition: 0.25s background-color;
+            cursor: pointer;
+        }
+    
+    .slidingBannerContainer
+    {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+        .slidingBanner
+        {
+            display: flex;
+            
+            animation: slide 90s linear infinite;
+        }
+
+        .bannerImage
+        {
+        }
+
+        @keyframes slide 
+        {
+            0%
+            {
+                transform: translateX(0);
+            }
+
+            100%
+            {
+                transform: translateX(-200%);
+            }
+        }
+
+        
+
+    .bottomContainer
+    {
+        display: flex;
+        height: 20vh;
+        background-color: rgb(0, 36, 56);
+    }
