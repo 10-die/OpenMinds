@@ -1,4 +1,4 @@
-import styles from "./defaultPageContainer.module.css";
+import styles from "./DefaultPageContainer.module.css";
 import { PAGE_COLOR } from "@/src/customiseComponents/customisePage";
 
 interface PageContainerConstructor

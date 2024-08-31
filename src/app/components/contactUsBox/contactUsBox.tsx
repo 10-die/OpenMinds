@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef, useState } from "react";
-import styles from './ContactUsBox.module.css';
+import styles from './contactUsBox.module.css';
 import { supabase } from "@/src/lib/supabaseClient";
 import AutoResizingTextArea from "../autoResizingTextArea/autoResizingTextArea";
 
