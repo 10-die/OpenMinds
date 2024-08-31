@@ -1,5 +1,5 @@
-import styles from "@/app/components/defaultPageContainer/defaultPageContainer.module.css";
-import { PAGE_COLOR } from "@/customiseComponents/customisePage";
+import styles from "./defaultPageContainer.module.css";
+import { PAGE_COLOR } from "@/src/customiseComponents/customisePage";
 
 interface PageContainerConstructor
 {

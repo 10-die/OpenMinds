@@ -1,5 +1,5 @@
 "use client"
-import { PAGE_COLOR } from "@/customiseComponents/customisePage";
+import { PAGE_COLOR } from "@/src/customiseComponents/customisePage";
 import TopBanner from "../../components/topBanner/TopBanner";
 import styles from "./page.module.css"
 import { useRouter } from "next/navigation";

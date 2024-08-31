@@ -2,8 +2,8 @@
 import React from "react";
 import TopBanner from "../../components/topBanner/TopBanner";
 import styles from "./page.module.css"
-import OurTeamBox from "@/app/components/ourTeamBox/OurTeamBox";
-import { PAGE_COLOR } from "@/customiseComponents/customisePage";
+import OurTeamBox from "../../components/ourTeamBox/OurTeamBox";
+import { PAGE_COLOR } from "@/src/customiseComponents/customisePage";
 
 export default function ourTeam()
 {

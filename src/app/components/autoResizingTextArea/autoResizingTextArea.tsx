@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "@/app/components/autoResizingTextArea/autoResizingTextArea.module.css"
+import styles from "./autoResizingTextArea.module.css"
 
 const AutoResizingTextArea: React.FC = () =>
     {

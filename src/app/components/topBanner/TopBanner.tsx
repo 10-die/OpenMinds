@@ -1,7 +1,7 @@
 import { redirect, useRouter } from "next/navigation";
 import styles from "./TopBanner.module.css"
 import Image from "next/image";
-import { TOP_BANNER_COLOR, TOP_BANNER_LINKS_COLOR, TOP_BANNER_LINKS_FONT } from "@/customiseComponents/customiseTopBanner";
+import { TOP_BANNER_COLOR, TOP_BANNER_LINKS_FONT, TOP_BANNER_LINKS_COLOR } from "@/src/customiseComponents/customiseTopBanner";
 
   //color parameter
     interface setTopBannerColor

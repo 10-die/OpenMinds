@@ -1,4 +1,4 @@
-import styles from "@/app/components/ourTeamBox/OurTeamBox.module.css"
+import styles from "./OurTeamBox.module.css"
 import Image from "next/image";
 
 interface OurTeamBoxConstructor
