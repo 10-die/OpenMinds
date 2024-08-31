@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import TopBanner from "../../components/topBanner/TopBanner"
-import ContactUsBox from "../../components/contactUsBox/ContactUsBox";
+import ContactUsBox from "@/app/components/contactUsBox/contactUsBox";
 import styles from "./page.module.css";
 import { supabase } from "@/lib/supabaseClient"
 import { PAGE_COLOR } from "@/customiseComponents/customisePage";
