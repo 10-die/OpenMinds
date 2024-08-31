@@ -169,7 +169,6 @@ export default function Home()
         </div>
 
         <div className={styles.midContainerFour}>
-          <h1>Academics</h1>
         </div>
         
 
